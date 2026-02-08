@@ -1,0 +1,47 @@
+.wallet-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallet-card {
+  background: #11162a;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(108, 99, 255, 0.15);
+}
+
+.wallet-card h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.wallet-card p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 32px;
+}
+
+.connect-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: white;
+  background: linear-gradient(135deg, #6c63ff, #00e5ff);
+  transition: all 0.25s ease;
+}
+
+.connect-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.6);
+}
