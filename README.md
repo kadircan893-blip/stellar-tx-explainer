@@ -1,82 +1,82 @@
-# React + TypeScript + Vite
+# Stellar Transaction Explainer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Stellar Transaction Explainer is a decentralized application built on Stellar Testnet that allows users to fetch and understand blockchain transactions in a simple and human-readable format.
 
-Currently, two official plugins are available:
+The main purpose of this project is to demonstrate how to integrate a frontend application with the Stellar blockchain using the Horizon API and present raw blockchain data in a user-friendly way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎯 Project Purpose
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+This project was developed as a final project for a Stellar-focused development program.
 
-## Expanding the ESLint configuration
+Goals of the project:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Learn how to interact with Stellar Testnet  
+- Fetch real blockchain transaction data  
+- Convert technical transaction details into readable explanations  
+- Build a clean and simple user interface  
+- Demonstrate full-stack dApp development skills  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Fetch transactions from Stellar Testnet  
+- Display ledger number, source account and network fee  
+- Generate human-readable transaction explanations  
+- Modern and responsive UI  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠 Tech Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-## Test Data Source
+- React  
+- TypeScript  
+- Vite  
+- Stellar Horizon API  
+- CSS  
 
-This application retrieves real Stellar Testnet transactions from the official Horizon API.
+---
 
-You can obtain valid transaction hashes from:
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/kadircan893-blip/stellar-tx-explainer.git
+cd stellar-tx-explainer
+
+Install dependencies:
+npm install
+--------------
+Start the development server:
+npm run dev
+--------------
+Open in your browser:
+http://localhost:5173
+
+Usage
+
+Visit:
 
 https://horizon-testnet.stellar.org/transactions?limit=5
+Copy any transaction hash
+Paste the hash into the input field
+Click Explain Transaction
+The application will display a summary and raw transaction data.
 
-Copy any hash value from the response and paste it into the application to test.
+***********************
+
+Stellar Network
+This project uses Stellar Testnet.
+All transaction data is fetched from:
+
+https://horizon-testnet.stellar.org
+
+## 📄 License
+This project is created for educational purposes.
+
+
+
+
