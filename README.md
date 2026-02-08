@@ -1,5 +1,8 @@
 # Stellar Transaction Explainer
 
+## 🔗 Live Demo
+https://stellar-tx-explainer.vercel.app/
+
 Stellar Transaction Explainer is a decentralized application built on Stellar Testnet that allows users to fetch and understand blockchain transactions in a simple and human-readable format.
 
 The main purpose of this project is to demonstrate how to integrate a frontend application with the Stellar blockchain using the Horizon API and present raw blockchain data in a user-friendly way.
